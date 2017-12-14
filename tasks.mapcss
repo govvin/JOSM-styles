@@ -1,0 +1,115 @@
+meta 
+{
+    title: "HOTOSM tasks";
+    description: "Display task grid with ID + colorize";
+    version: "0.1_2017-12-08";
+    author: "Majkaz";
+    link: "https://drive.google.com/open?id=1PEzVusUrCqn2Y8SbPXSEkACLcFnteBsd";
+}
+area|z-12[taskId]
+{
+	z-index: +2;
+	text-position: center;
+	text: "taskId";
+	font-size: 10;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+area|z12-14[taskId]
+{
+	z-index: +2;
+	text-position: center;
+	text: "taskId";
+	font-size: 16;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+area|z15-[taskId]
+{
+	z-index: +2;
+	text-position: center;
+	text: "taskId";
+	font-size: 20;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+
+area[taskStatus=VALIDATED]::status
+{
+	color: lime;
+	fill-color: lime;
+	fill-extent: 30;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+
+area[taskStatus=MAPPED]::status
+{
+	color: yellow;
+	fill-color: yellow;
+	fill-extent: 30;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=INVALIDATED]::status
+{
+	color: red;
+	fill-color: red;
+	fill-extent: 30;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=READY]::status
+{
+	color: white;
+	fill-color: white;
+	fill-extent: 2;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=BADIMAGERY]::status
+{
+	color: dimgray;
+	fill-extent: 30;
+	fill-color: gray;
+	fill-opacity: 0.4;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=LOCKED_FOR_MAPPING]::status
+{
+	color: blue;
+	fill-color: blue;
+	fill-extent: 60;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=LOCKED_FOR_VALIDATION]::status
+{
+	color: blue;
+	fill-color: blue;
+	fill-extent: 60;
+	fill-opacity: 0.4;
+	text-position: center;
+	z-index: +2;
+}
