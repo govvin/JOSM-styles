@@ -1,0 +1,6 @@
+area["landuse"]
+{
+z-index: +2;
+text-position: center;
+text: eval(areasize());
+}
