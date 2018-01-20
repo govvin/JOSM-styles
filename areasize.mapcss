@@ -6,8 +6,8 @@ font-weight: bold;
 text-position: center;
 text: eval(cond(areasize()>1000,"",concat(round(areasize())," m2")));
 fill-color: eval(cond(areasize()>1000,#808080,cond(areasize()>700,orange,red)));
-fill-opacity: eval(cond(areasize()>1000,0.0,0.6));
-width: eval(cond(areasize()>1000,0,cond(areasize()>700,5,10)));
+fill-opacity: eval(cond(areasize()>1000,0.0,cond(areasize()>25,0.6,1.0)));
+width: eval(cond(areasize()>1000,0,cond(areasize()>700,5,cond(areasize()>25,10,20))));
 opacity: 0.6;
 }
 
