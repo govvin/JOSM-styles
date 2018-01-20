@@ -1,4 +1,4 @@
-area["landuse"][!dibavod:id]::landuse
+area["landuse"][!dibavod:id]:completely_downloaded::landuse
 {
 z-index: +2;
 font-size: 16;
