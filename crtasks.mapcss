@@ -1,0 +1,105 @@
+meta 
+{
+    title: "CR tasks";
+    description: "Display task grid with ID + colorize";
+    version: "0.1_2017-12-08";
+    author: "Majkaz";
+    link: "https://drive.google.com/open?id=1PEzVusUrCqn2Y8SbPXSEkACLcFnteBsd";
+}
+area|z-12[id]
+{
+	z-index: +2;
+	text-position: center;
+	text: "id";
+	font-size: 10;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+area|z12-14[id]
+{
+	z-index: +2;
+	text-position: center;
+	text: "id";
+	font-size: 16;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+area|z15-[id]
+{
+	z-index: +2;
+	text-position: center;
+	text: "id";
+	font-size: 20;
+	font-weight: bold;
+	text-color: white;
+	text-halo-radius: 1;
+	text-halo-color: black;
+	fill-color: black;
+	width:1;
+	fill-opacity: 0.00;
+}
+
+area[state=2]::status
+{
+	color: yellow;
+	fill-color: yellow;
+	fill-extent: 30;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=INVALIDATED]::status
+{
+	color: red;
+	fill-color: red;
+	fill-extent: 30;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[locked=false][state=0]::status
+{
+	color: white;
+	fill-color: white;
+	fill-extent: 2;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=BADIMAGERY]::status
+{
+	color: dimgray;
+	fill-extent: 30;
+	fill-color: gray;
+	fill-opacity: 0.4;
+	text-position: center;
+	z-index: +2;
+}
+area[locked=true]::status
+{
+	color: blue;
+	fill-color: blue;
+	fill-extent: 60;
+	fill-opacity: 0.2;
+	text-position: center;
+	z-index: +2;
+}
+area[taskStatus=LOCKED_FOR_VALIDATION]::status
+{
+	color: blue;
+	fill-color: blue;
+	fill-extent: 60;
+	fill-opacity: 0.4;
+	text-position: center;
+	z-index: +2;
+}
