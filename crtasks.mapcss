@@ -58,7 +58,7 @@ area[state=2]::status
 	text-position: center;
 	z-index: +2;
 }
-area[taskStatus=INVALIDATED]::status
+area[state=1]::status
 {
 	color: red;
 	fill-color: red;
