@@ -6,7 +6,7 @@ meta
     author: "Majkaz";
     link: "https://drive.google.com/open?id=1PEzVusUrCqn2Y8SbPXSEkACLcFnteBsd";
 }
-area|z-12[id]
+area|z-12[task]
 {
 	z-index: +2;
 	text-position: center;
@@ -20,7 +20,7 @@ area|z-12[id]
 	width:1;
 	fill-opacity: 0.00;
 }
-area|z12-14[id]
+area|z12-14[task]
 {
 	z-index: +2;
 	text-position: center;
@@ -34,7 +34,7 @@ area|z12-14[id]
 	width:1;
 	fill-opacity: 0.00;
 }
-area|z15-[id]
+area|z15-[task]
 {
 	z-index: +2;
 	text-position: center;
