@@ -1,7 +1,7 @@
 meta 
 {
     title: "CR tasks";
-    description: "Display task grid with ID + colorize";
+    description: "Display task with ID + colorize";
     version: "0.1_2017-12-08";
     author: "Majkaz";
     link: "https://drive.google.com/open?id=1PEzVusUrCqn2Y8SbPXSEkACLcFnteBsd";
@@ -10,7 +10,7 @@ area|z-12[id]
 {
 	z-index: +2;
 	text-position: center;
-	text: "id";
+	text: "task";
 	font-size: 10;
 	font-weight: bold;
 	text-color: white;
@@ -24,7 +24,7 @@ area|z12-14[id]
 {
 	z-index: +2;
 	text-position: center;
-	text: "id";
+	text: "task";
 	font-size: 16;
 	font-weight: bold;
 	text-color: white;
@@ -38,7 +38,7 @@ area|z15-[id]
 {
 	z-index: +2;
 	text-position: center;
-	text: "id";
+	text: "task";
 	font-size: 20;
 	font-weight: bold;
 	text-color: white;
