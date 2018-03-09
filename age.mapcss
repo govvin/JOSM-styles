@@ -1,0 +1,40 @@
+meta 
+{
+    title: "age";
+    description: "Colorize by age";
+    version: "0.25_2017-12-08";
+    author: "Majkaz";
+    link: "";
+}
+
+way[JOSM_search("timestamp:/2011")]::age 
+{ 
+    z-index: -5;
+    width: 25;
+    opacity:0.25;
+    color: red;
+}
+
+way[JOSM_search("timestamp:2011/2015")]::age 
+{ 
+    z-index: -5;
+    width: 25;
+    opacity:0.25;
+    color: orange;
+}
+
+way[JOSM_search("timestamp:2015/2017")]::age 
+{ 
+    z-index: -5;
+    width: 25;
+    opacity:0.25;
+    color: yellow;
+}
+way[JOSM_search("timestamp:2017/")]::age 
+
+{ 
+    z-index: -5;
+    width: 25;
+    opacity:0.25;
+    color: green;
+}

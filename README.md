@@ -29,3 +29,11 @@ Colour warnings according to area size:
 * orange - < 1.000 m2
 
 _Not adjusted for zoom level_
+<br>
+### Age of ways
+
+![2018-03-09_145218.png](pic/2018-03-09_145218.png "Age of ways")
+* red: last edit <2011
+* orange: last edit 2011-2015
+* yellow: last edit 2015-2017
+* green: last edit 2017
