@@ -36,4 +36,4 @@ _Not adjusted for zoom level_
 * red: last edit <2011
 * orange: last edit 2011-2015
 * yellow: last edit 2015-2017
-* green: last edit 2017
+* green: last edit <2017
