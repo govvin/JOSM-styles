@@ -1,0 +1,41 @@
+area[building]:closed {
+    color: lightgreen;
+    width: 3;
+    small_area : true;
+	font-size: 13;
+	font-weight: bold;
+	text-color: lightgreen;
+	text-position: center;
+	text: "source";
+	
+}
+
+node {
+	symbol-shape: square;
+	symbol-size: 8;
+}
+
+area|z17-[building]["ref:ruian:building"], area|z17-[building:part]["ref:ruian:building"]
+{
+        color: greenyellow;
+		text-color: greenyellow;
+		width: 4;
+		font-size: 14;
+		z-index: 1;
+		fill-opacity: 0.03;
+
+}
+
+area|z17-[building]["building:levels"], area|z17-[building:part]["building:levels"]
+{
+        color: greenyellow;
+		text-color: greenyellow;
+		z-index: 1;
+        fill-opacity: 0.03; /* let the background, i.e. the roof, be recognizable */
+        width: 4; /* any building WITH a building:levels tag (except for garages) gets a 5 pixel thick outline ... */
+        /* text-halo-radius: 2; */  
+        /* ... as well as a text tag giving the house number as well as the number of building:levels and roof:levels (and roof height in brackets): */
+        text: eval(concat( tag(source) ,": BL", tag("building:levels"), "-RL/H", cond(has_tag_key("roof:levels"), tag("roof:levels"), "") ,   cond(has_tag_key("roof:height"), concat("(",tag("roof:height"),"m)"), "")  )) ; 
+        font-size: 14;
+        font-weight: bold;
+}
