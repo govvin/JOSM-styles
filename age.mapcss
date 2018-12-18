@@ -23,14 +23,14 @@ way[JOSM_search("timestamp:2011/2015")]::age
     color: orange;
 }
 
-way[JOSM_search("timestamp:2015/2017")]::age 
+way[JOSM_search("timestamp:2016/2017")]::age 
 { 
     object-z-index: -5;
     width: 25;
     opacity:0.25;
     color: yellow;
 }
-way[JOSM_search("timestamp:2017/")]::age 
+way[JOSM_search("timestamp:2018/")]::age 
 
 { 
     object-z-index: -5;
